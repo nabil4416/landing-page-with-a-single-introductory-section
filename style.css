@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    margin: 54px 0 60px 68px;
+    font-family: "Poppins", sans-serif;
+    gap: 40px;
+}
+.logo img {
+    width: 30%;
+    margin-bottom: 78px;
+}
+.hero {
+    margin-left: 5px;
+}
+.hero img {
+    max-width: 100%;
+}
+
+.col1 {
+    width: 50%;
+}
+.col2 {
+    width: 45%;
+}
+h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    line-height: 60px;
+    font-weight: 600;
+}
+.col2 p {
+    font-size: 18px;
+    color: #f0e9e7;
+    padding: 0 130px 20px 0px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.btn {
+    padding: 16px 64px;
+    border-radius: 30px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 2px 5px 20px black;
+}
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social {
+    position: absolute;
+    right: 159px;
+    bottom: -22px;
+    display: inline-flex;
+}
+
+.social a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 16px;
+    text-decoration: none;
+    color: white;
+}
+.social a:hover {
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+.fa-brands {
+    margin-left: 12px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(images/bg-mobile.svg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        margin: 0 5% 20%;
+        flex-direction: column;
+    }
+    .col1 {
+        width: 100%;
+    }
+    .col2 {
+        width: 100%;
+        text-align: center;
+    }
+    .col2 p {
+        padding: 0 0px 20px 0px;
+    }
+    .btn {
+        padding: 10px 100px;
+    }
+    .social {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
